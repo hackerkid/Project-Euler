@@ -17,11 +17,11 @@ def ispali(x):
 	return x == sum
 
 maxi = 3
-for i in range(10000,1000, -1):
-	for j in range(i, 1000, -1):
+for i in range(999,99, -1):
+	for j in range(i,1000 , 1):
 		b = i * j
 		if(ispali(b)):
-			maxi = b
+			maxi = max(maxi, b)
 			break
 
 
